@@ -1,0 +1,62 @@
+---
+layout: default
+meta_title: Home
+meta_description: Skeleventy is a beautiful, powerful skeleton boilerplate built with Eleventy and TailwindCSS
+body_class: home
+title: Welcome, I'm Jesús!
+---
+
+<main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20 focus:outline-none" tabindex="-1">
+
+    <section id="container-centre" class="column centre grid grid-cols-1 row-gap-6" aria-label="Developer presentation">
+        
+            <h1 class="page-title">{{ title }}</h1>
+
+            {# {% for key, role in site.roles %}
+
+                <p>{{ role }}</p>
+
+            {% endfor %}     #}
+
+            <section class="" aria-label="Developer interests">
+                <div class="page-subtitle changing-keywords" id="change">
+                    
+                    {% for key, role in site.roles %}
+                        <h2 class="text-hidden text-center">{{ role }}</h2><br/>                 
+                    {% endfor %}               
+                    
+                </div>            
+            </section>
+            <section class="flex">
+            {% include 'components/social-icons.njk' %}
+            </section>
+        <div class="content">
+
+        
+            <p>I build <a href="https://github.com/gzuzmark" target="_blank">things</a>, mainly for the web🌎.</p>
+            <p><a href="https://www.11ty.dev/docs/" target="_blank">Eleventy</a> and <a href="https://tailwindcss.com">TailwindCSS</a>.</p>
+
+            <h2 class="text-3xl">Features</h2>
+
+            <ul class="mb-12 list-disc pl-4">
+                <li>Build sites faster with the power of Eleventy, TailwindCSS and SCSS</li>
+                <li><a href="https://laravel-mix.com/docs/5.0/basic-example">Laravel Mix</a> (webpack) to watch, concatenate and compile styles and scripts</li>
+                <li><a href="https://www.purgecss.com/">Purgecss</a> to remove any unused CSS</li>
+                <li>HTML minifier</li>
+                <li>ES6 support with Babel</li>
+                <li>SEO friendly pages (including Open Graph and Twitter meta)</li>
+                <li>Image lazyloading</li>
+                <li>A simple blog with categories and featured images</li>
+            </ul>
+
+            <h2 class="text-3xl">Want to give it a spin?</h2>
+
+            <p>Check out the <a href="https://github.com/josephdyer/skeleventy">full documentation</a> on how to get started.</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+

@@ -1,0 +1,33 @@
+
+//==========  Typography ==========//
+
+// headings
+h1, h2, h3 {
+    @apply font-bold leading-tight mt-0 mb-6 text-dracula-color;
+}
+
+.page-title {
+	@apply text-5xl;
+}
+
+.page-subtitle {
+	@apply text-3xl;
+}
+
+// content
+.content {
+
+	// paragraph
+	p {
+		@apply mb-8 text-dracula-color;
+
+        // intro paragraph
+		&:first-child {
+			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-dracula-colorFaded;
+
+			@screen md {
+                @apply text-3xl;
+            }
+		}
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "main": [
+        {
+            "label": "Home",
+            "url": "/"
+        },
+        {
+            "label": "About",
+            "url": "/about/"
+        },
+        {
+            "label": "Writing",
+            "url": "/writing/"
+        }
+        
+    ],
+    "highlight": [
+        {
+            "label": "Hire Me",
+            "url": "/hire/"
+        }
+    ]
+}

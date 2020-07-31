@@ -1,0 +1,52 @@
+
+
+.changing-keywords{
+    vertical-align:top;
+    overflow:hidden;
+    height:35px;
+    position:relative;
+    display: inline-block;
+    width: 300px;
+  }
+  .text-hidden{
+    position:absolute;
+    top: 35px;
+    display:inline-block;
+    width:300px;
+      opacity:0;
+    animation: 3s slideme 4s infinite ;
+  }
+ 
+
+  @for $i from 1 through 10 {
+    .text-hidden:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.9}s;
+    }
+}
+
+  
+  @keyframes slideme {
+    0% {
+      top: 20px;
+      opacity:0;
+    }
+    5% {
+      top: 0px;
+      opacity:1;
+    }
+    10%{
+      top : 0;
+      opacity:1;
+    }
+    20%{
+      opacity:1;
+    }
+    25% {    
+    opacity:0.1;
+      top : 0;
+    }
+    30% {
+      opacity:0;
+      top: 20px;
+    }
+  }
