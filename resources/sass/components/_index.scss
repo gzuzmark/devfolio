@@ -1,0 +1,116 @@
+.top {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title hero hero"
+    "interests hero hero"
+    "links hero hero";
+  grid-template-rows: repeat(3, 100px);
+}
+
+.title {
+  grid-area: title;
+}
+
+.interests {
+  grid-area: interests;
+}
+
+.links {
+  grid-area: links;
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 300px;
+  // background: url(/images/main/gee_me_094.svg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  //   flex: 1 1;
+  max-height: 300px;
+}
+
+.top-left {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.top-left h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.links a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 0.75em;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: 180ms all ease-in-out;
+  transition: 180ms all ease-in-out;
+  font-size: 1.125rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+[class^="link"]:not(.link-codepen):hover,
+[class^="link"]:not(.link-codepen):focus,
+.profile .container > a:hover,
+.profile .container > a:focus {
+  -webkit-transform: translate(-0.15em, -0.15em);
+  transform: translate(-0.15em, -0.15em);
+  -webkit-box-shadow: 0.3em 0.3em var(--color-secondary);
+  box-shadow: 0.3em 0.3em var(--color-secondary);
+}
+[class^="link"]:not(.link-codepen):focus,
+.profile .container > a:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+
+.link-linkedin svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  fill: currentColor;
+}
+
+@media (max-width: 700px) {
+  .top {
+    grid-template-areas:
+      "hero hero"
+      "title interests"
+      "links links";
+  }
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .top {
+    grid-template-areas:
+      "hero"
+      "title"
+      "interests"
+      "links";
+  }
+}
