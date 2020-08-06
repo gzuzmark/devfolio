@@ -2,7 +2,7 @@
 //==========  Links ==========//
 
 a {
-    @apply text-dracula-colorBright no-underline transition-all duration-300 ease-out;
+    @apply text-blog-colorBright no-underline transition-all duration-300 ease-out;
 
     &:not([class]) {
         border-bottom-width: 2px;

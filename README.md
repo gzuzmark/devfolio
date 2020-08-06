@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f4455669-0ce8-40ea-8ff5-5c31f0aadfa5/deploy-status)](https://app.netlify.com/sites/skeleventy/deploys)
 
-# Skeleventy
+# Devfolio
 
-A skeleton boilerplate built with Eleventy and TailwindCSS. Check out [Skeleventy](https://skeleventy.netlify.com/)!
+Personal web blog based on skeleventy theme. Eleventy and TailwindCSS. Check out [Skeleventy](https://skeleventy.netlify.com/)!
 
 ## Features
 
@@ -45,11 +45,11 @@ Type the `npm run production` command to minify scripts, styles and run Purgecss
 
 Purge will cross reference your templates/HTML with all those Tailwind classes and will remove any classes you haven't used - pretty cool huh?
 
-Skeleventy will now reference `main.min.css` as the new stylesheet (annoyingly, Mix also minifies `main.css` as well - this bugs the hell out of me!).
+Eleventy will now reference `main.min.css` as the new stylesheet (annoyingly, Mix also minifies `main.css` as well - this bugs the hell out of me!).
 
 ## Recommendations
 
-Once you've had a tinker with Skeleventy and made something Awwwards worthy, jump over to [Netlify](https://www.netlify.com) and host your beautiful creation for free.
+Jump over to [Netlify](https://www.netlify.com) and host your beautiful creation for free.
 
 You can set up continuous deployment which will watch your repo and deploy when you've pushed new changes to it - Netlify will take care of all the heavy lifting for you.
 

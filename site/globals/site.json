@@ -1,10 +1,10 @@
 {
-    "name": "Skeleventy",
+    "name": "Devfolio based on skeleventy by joe dyer",
     "url": "https://skeleventy.netlify.com",
     "author": {
-        "name": "Max Power",
-        "email": "hello@maxpower.com",
-        "handle": "@maxpower",
+        "name": "Jesús Márquez",
+        "email": "jesus.marquez.caballero@gmail.com",
+        "handle": "@_Gzvz_",
         "avatar": "/images/blog/author.jpg"
     },
     "images": {
@@ -14,21 +14,21 @@
         "og": "/images/meta/og.jpg"
     },
     "social_links": {
-        "facebook": "https://www.facebook.com",
-        "twitter": "https://twitter.com/joe_dyer1",
-        "linkedin": "https://www.linkedin.com"
+        "github": "https://github.com/gzuzmark",
+        "twitter": "https://twitter.com/_Gzvz_",
+        "linkedin": "https://www.linkedin.com/in/jes%C3%BAs-alonso-m%C3%A1rquez-caballero-28148351/"
     },
     "address": {
-        "street": "123 Fake Street",
-        "street_2": "Fake Road",
-        "city": "London",
-        "postcode": "LN1 234",
-        "country": "GB"
+        "street": "",
+        "street_2": "",
+        "city": "Lima",
+        "postcode": "",
+        "country": "Peru"
     },
     "contact": {
-        "phone": "123 456 789",
-        "mobile": "(+44) 1234 5678",
-        "email": "hello@maxpower.com"
+        "phone": "",
+        "mobile": "",
+        "email": "jesus.marquez.caballero@gmail.com"
     },
     "roles": {
         "developer": "Web developer 👨‍💻",

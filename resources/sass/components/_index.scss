@@ -45,52 +45,81 @@
   align-content: center;
 }
 
+.menu {
+  justify-items: stretch;
+}
+
 .top-left h1 {
   text-align: center;
   margin: 0;
 }
 
-.links a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+.top-left ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.top-left a {
+  background: var(--indigo);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: var(--black);  
+  // font-size: 20px;
+}
+
+// .social {
+//   display : inline-flex;
+//   flex-wrap: wrap;
+//   gap: 12px;
+// }
+
+[class^="link"]:not(.link-menu) {
+  width: 100%;
+  min-height: 3em;
+  background-color: var(--indigo);
+  color: #fff;
+  box-shadow: 0.18em 0.18em var(--green);
+}
+
+[class^="link"]:not(.link-menu),
+.top-left .container > a {
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding: 0 0.75em;
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
-  -webkit-transition: 180ms all ease-in-out;
   transition: 180ms all ease-in-out;
   font-size: 1.125rem;
   line-height: 1;
   text-align: center;
   text-decoration: none;
 }
-[class^="link"]:not(.link-codepen):hover,
-[class^="link"]:not(.link-codepen):focus,
-.profile .container > a:hover,
-.profile .container > a:focus {
-  -webkit-transform: translate(-0.15em, -0.15em);
-  transform: translate(-0.15em, -0.15em);
-  -webkit-box-shadow: 0.3em 0.3em var(--color-secondary);
-  box-shadow: 0.3em 0.3em var(--color-secondary);
-}
-[class^="link"]:not(.link-codepen):focus,
-.profile .container > a:focus {
-  outline-color: transparent;
-  outline-style: solid;
-}
 
-.link-linkedin svg {
+[class^="link"]:not(.link-menu) svg {
   width: 1em;
   height: 1em;
   margin-right: 0.25em;
   fill: currentColor;
 }
+
+[class^="link"]:not(.link-menu):hover,
+[class^="link"]:not(.link-menu):focus,
+.top-left .container > a:hover,
+.top-left .container > a:focus {  
+  transform: translate(-0.15em, -0.15em);  
+  box-shadow: 0.3em 0.3em var(--green);
+}
+[class^="link"]:not(.link-menu):focus,
+.top-left .container > a:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+
 
 @media (max-width: 700px) {
   .top {

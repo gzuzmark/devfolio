@@ -3,7 +3,7 @@
 
 // headings
 h1, h2, h3 {
-    @apply font-bold leading-tight mt-0 mb-6 text-dracula-color;
+    @apply font-bold leading-tight mt-0 mb-6 text-blog-color;
 }
 
 .page-title {
@@ -19,11 +19,11 @@ h1, h2, h3 {
 
 	// paragraph
 	p {
-		@apply mb-8 text-dracula-color;
+		@apply mb-8 text-blog-color;
 
         // intro paragraph
 		&:first-child {
-			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-dracula-colorFaded;
+			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-blog-colorFaded;
 
 			@screen md {
                 @apply text-3xl;

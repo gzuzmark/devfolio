@@ -125,7 +125,7 @@ module.exports = {
         800: '#97266d',
         900: '#702459',
       },
-      dracula: {
+      blog: {
         primary: 'var(--gray6)',
         secondary: 'var(--pink)',
         backgroundColorTransparent: 'rgba(40, 42, 54, 0.9)',
