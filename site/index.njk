@@ -1,9 +1,9 @@
 ---
 layout: default
 meta_title: Home
-meta_description: Skeleventy is a beautiful, powerful skeleton boilerplate built with Eleventy and TailwindCSS
+meta_description: Jesus Marquez blog site
 body_class: home
-title: Welcome, I'm Jesús!
+title: Hey, I'm Jesús!
 ---
 
 <main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20 focus:outline-none" tabindex="-1">
@@ -11,50 +11,72 @@ title: Welcome, I'm Jesús!
     <section id="container-centre" class="column centre grid grid-cols-1 row-gap-6" aria-label="Developer presentation">
         <div class="top">
             <header class="title top-left">
-                <h1 class="page-title">{{ title }}</h1>
+                <h1>
+                    <span class="page-title">{{ title }}</span>
+                </h1>
+                <!-- <h2 class="page-title-presentation">
+                    <span class="highlight">here to help you with Web development</span>
+                </h2> -->
             </header>
             <section class="interests top-left" aria-label="Developer interests">
-                <div class="page-subtitle changing-keywords" id="change">
-                    
+                <div class="page-title-presentation changing-keywords" id="change">
+
                     {% for key, role in site.roles %}
-                        <h2 class="text-hidden text-center">{{ role }}</h2><br/>                 
-                    {% endfor %}               
-                    
-                </div>            
+                    <h2 class="text-hidden text-center highlight">{{ role }}</h2><br />
+                    {% endfor %}
+
+                </div>
             </section>
             <section class="top-left menu">
                 <ul id="menu-list">
-                {% for icon, link in site.social_links %}
+                    {% for icon, link in site.social_links %}
 
                     <li class="text-center">
-                        <a href="{{ link | safe }}" class="link-{{icon}} block text-gray-500 hover:text-pink-500" target="_blank" rel="noopener noreferrer">
-                            <span>                            
-                                <svg class="block" fill="currentColor" role="img" aria-hidden="true" width="18" height="18">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons/icon-library.svg#icon-{{ icon }}"></use>
+                        <a href="{{ link | safe }}" class="link-{{icon}} block text-gray-500 hover:text-pink-500"
+                            target="_blank" rel="noopener noreferrer">
+                            <span>
+                                <svg class="block" fill="currentColor" role="img" aria-hidden="true" width="18"
+                                    height="18">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="/images/icons/icon-library.svg#icon-{{ icon }}"></use>
                                 </svg>
                             </span>
-                        {{ icon }}   
+                            {{ icon }}
                         </a>
 
                     </li>
 
-                {% endfor %}
+                    {% endfor %}
                 </ul>
             </section>
-            <section class="hero">
+            <!-- <section class="hero">
                 <img alt="saad sitting on table" src="/images/main/gee_me_094.svg">
-            </seciton>
-        </div>   
+            </section> -->
+        </div>
         <div class="content">
 
-        
-            <p>I build <a href="https://github.com/gzuzmark" target="_blank">things</a>, mainly for the web🌎.</p>            
+            <p>I build <a href="https://github.com/gzuzmark" target="_blank">things</a>, mainly for the web🌎.</p>
+            <section class="features">
+                <ul class="dev-icons">
+                    {% for icon, link in site.tech %}
+
+                    <li class="feature">
+                        <svg class="icon block text-gray-500 hover:text-pink-500" role="img" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="/images/icons/icon-library.svg#icon-{{ icon }}"></use>
+                        </svg>
+                        <p>{{ link }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
 
             <h2 class="text-3xl">I mainly work with:</h2>
 
             <ul class="mb-12 list-disc pl-4">
                 <li>Html</li>
-                <li><a href="https://laravel-mix.com/docs/5.0/basic-example">Laravel Mix</a> (webpack) to watch, concatenate and compile styles and scripts</li>
+                <li><a href="https://laravel-mix.com/docs/5.0/basic-example">Laravel Mix</a> (webpack) to watch,
+                    concatenate and compile styles and scripts</li>
                 <li><a href="https://www.purgecss.com/">Purgecss</a> to remove any unused CSS</li>
                 <li>HTML minifier</li>
                 <li>ES6 support with Babel</li>
@@ -65,12 +87,11 @@ title: Welcome, I'm Jesús!
 
             <h2 class="text-3xl">Want to give it a spin?</h2>
 
-            <p>Check out the <a href="https://github.com/josephdyer/skeleventy">full documentation</a> on how to get started.</p>
+            <p>Check out the <a href="https://github.com/josephdyer/skeleventy">full documentation</a> on how to get
+                started.</p>
 
         </div>
 
     </section>
 
 </main>
-
-

@@ -14,4 +14,12 @@ a {
     }
 }
 
+.highlight {
+    //background-image: url("/static/blackgrit-15c168539fb7109ce300574e7b4b0732.png");    
+    background-color: var(--green);
+    color: var(--gray5);
+    background-size: 500px;
+    padding: 5px;
+}
+
 

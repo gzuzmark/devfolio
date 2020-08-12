@@ -1,37 +1,46 @@
 {
-    "name": "Devfolio based on skeleventy by joe dyer",
-    "url": "https://skeleventy.netlify.com",
-    "author": {
-        "name": "Jesús Márquez",
-        "email": "jesus.marquez.caballero@gmail.com",
-        "handle": "@_Gzvz_",
-        "avatar": "/images/blog/author.jpg"
-    },
-    "images": {
-        "logo": "/images/logo/logo.svg",
-        "favicon": "/images/favicon.ico",
-        "twitter": "/images/meta/twitter.jpg",
-        "og": "/images/meta/og.jpg"
-    },
-    "social_links": {
-        "github": "https://github.com/gzuzmark",
-        "twitter": "https://twitter.com/_Gzvz_",
-        "linkedin": "https://www.linkedin.com/in/jes%C3%BAs-alonso-m%C3%A1rquez-caballero-28148351/"
-    },
-    "address": {
-        "street": "",
-        "street_2": "",
-        "city": "Lima",
-        "postcode": "",
-        "country": "Peru"
-    },
-    "contact": {
-        "phone": "",
-        "mobile": "",
-        "email": "jesus.marquez.caballero@gmail.com"
-    },
-    "roles": {
-        "developer": "Web developer 👨‍💻",
-        "enthusiast": "Music enthusiast 🎵"        
-    }
+  "name": "Devfolio based on skeleventy by joe dyer",
+  "url": "https://skeleventy.netlify.com",
+  "author": {
+    "name": "Jesús Márquez",
+    "email": "jesus.marquez.caballero@gmail.com",
+    "handle": "@_Gzvz_",
+    "avatar": "/images/blog/author.jpg"
+  },
+  "images": {
+    "logo": "/images/logo/logo.svg",
+    "favicon": "/images/favicon.ico",
+    "twitter": "/images/meta/twitter.jpg",
+    "og": "/images/meta/og.jpg"
+  },
+  "social_links": {
+    "github": "https://github.com/gzuzmark",
+    "twitter": "https://twitter.com/_Gzvz_",
+    "linkedin": "https://www.linkedin.com/in/jes%C3%BAs-alonso-m%C3%A1rquez-caballero-28148351/"
+  },
+  "address": {
+    "street": "",
+    "street_2": "",
+    "city": "Lima",
+    "postcode": "",
+    "country": "Peru"
+  },
+  "contact": {
+    "phone": "",
+    "mobile": "",
+    "email": "jesus.marquez.caballero@gmail.com"
+  },
+  "roles": {
+    "developer": "Web developer 👨‍💻",
+    "enthusiast": "Music enthusiast 🎵"
+  },
+  "tech": {
+    "html5": "html-5",
+    "css3": "css3",
+    "javascript": "JavaScript",
+    "angular": "Angular",
+    "dot-net": ".Net",
+    "npm": "npm",
+    "postgresql": "Sql"
+  }
 }

@@ -2,10 +2,10 @@
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
-    "title hero hero"
-    "interests hero hero"
-    "links hero hero";
-  grid-template-rows: repeat(3, 100px);
+    "title"
+    "interests"
+    "links";
+  grid-template-rows: repeat(3, 7rem);
 }
 
 .title {
@@ -118,6 +118,44 @@
 .top-left .container > a:focus {
   outline-color: transparent;
   outline-style: solid;
+}
+
+.features {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+}
+
+.feature {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-icons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;  
+}
+
+.feature .icon {
+  font-size: 50px;
+}
+.feature p {
+  color: --var(--purple);
+  font-size: 0.25em;
+  margin-top: 1.25em
+}
+
+.feature svg {
+  width: 1em;
+  height: 1em;  
+  fill: currentColor;
 }
 
 
