@@ -158,9 +158,15 @@
   fill: currentColor;
 }
 
-.skills {
+.skills {  
   list-style: none;
   list-style-type: none;
+}
+
+
+.skills li {  
+  display:flex;
+  gap: 5px
 }
 
 .skills li:before { content: '⚡'; margin-left: -20px; margin-right: 10px; } 
@@ -168,9 +174,9 @@
 @media (max-width: 700px) {
   .top {
     grid-template-areas:
-      "hero hero"
-      "title interests"
-      "links links";
+      "title"
+      "interests"
+      "links";
   }
   /* About */
   .about {
@@ -181,9 +187,8 @@
 @media (max-width: 500px) {
   .top {
     grid-template-areas:
-      "hero"
       "title"
-      "interests"
+      "interests"      
       "links";
   }
 }
